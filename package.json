@@ -1,0 +1,21 @@
+{
+  "name": "challenge-one-e-commerce",
+  "version": "1.0.0",
+  "description": "Proyecto e-commerce con Gulp y SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "SASS", 
+    "Gulp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.0"
+  }
+}
