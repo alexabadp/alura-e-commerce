@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
   <body>
-    <header>
-      <div class="imagen">
+    <header class="header">
+      <div class="contenedor contenido-header">
         <picture>
           <source srcset="build/img/Logo.avif" type="image/avif" />
           <source srcset="build/img/Logo.webp" type="image/webp" />
@@ -26,9 +26,26 @@
             width="200"
             height="300"
             src="build/img/Logo.jpg"
-            alt="imagen_vocalista"
+            alt="imagen_logo"
           />
         </picture>
+
+        <div class="buscador">
+          <input type="text" placeholder="¿Qué deseas buscar?" />
+          <picture>
+            <source srcset="build/img/buscar.avif" type="image/avif" />
+            <source srcset="build/img/buscar.webp" type="image/webp" />
+
+            <img
+              loading="lazy"
+              width="200"
+              height="300"
+              src="build/img/buscar.jpg"
+              alt="imagen_logo"
+            />
+          </picture>
+        </div>
+        <button class="loguin">Login</button>
       </div>
     </header>
   </body>
