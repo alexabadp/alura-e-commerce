@@ -33,6 +33,12 @@
     }
     order: 1;
 
+    i {
+      width: 17px;
+      height: 17px;
+      color: v.$preto;
+    }
+
     @include m.telefono {
       order: 0;
       position: relative;
@@ -51,6 +57,7 @@
         position: absolute;
         left: 235px;
         top: 11px;
+        color: lighten(v.$preto, 50%);
       }
     }
 
@@ -65,19 +72,12 @@
         top: 11px;
       }
     }
-
-    i {
-      width: 17px;
-      height: 17px;
-      color: v.$preto;
-    }
   }
 
-  .loguin {
+  .btn-loguin {
     width: 133px;
     height: 40px;
     background: none;
-    // border: 1px solid darken(v.$azul, 100%);
     border: 1px solid v.$azul;
     font-size: 14px;
     color: v.$azul;

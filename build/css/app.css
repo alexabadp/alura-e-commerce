@@ -392,6 +392,11 @@ img {
 .contenido-header .buscador input {
   display: none;
 }
+.contenido-header .buscador i {
+  width: 17px;
+  height: 17px;
+  color: #464646;
+}
 @media (min-width: 480px) {
   .contenido-header .buscador {
     order: 0;
@@ -411,6 +416,7 @@ img {
     position: absolute;
     left: 235px;
     top: 11px;
+    color: #c6c6c6;
   }
 }
 @media (min-width: 992px) {
@@ -424,12 +430,7 @@ img {
     top: 11px;
   }
 }
-.contenido-header .buscador i {
-  width: 17px;
-  height: 17px;
-  color: #464646;
-}
-.contenido-header .loguin {
+.contenido-header .btn-loguin {
   width: 133px;
   height: 40px;
   background: none;
@@ -438,4 +439,101 @@ img {
   color: #2a7ae4;
   font-weight: 600;
   line-height: 16px;
+}
+
+.banner {
+  position: relative;
+}
+.banner .contenido-banner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: #ffffff;
+  min-height: 192px;
+  bottom: 16px;
+  left: 16px;
+}
+.banner .contenido-banner h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.banner .contenido-banner p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.banner .contenido-banner .btn-productos {
+  width: 128px;
+  height: 40px;
+  background-color: #2a7ae4;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  .banner .contenido-banner {
+    left: 32px;
+    bottom: 32px;
+  }
+  .banner .contenido-banner h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+  }
+  .banner .contenido-banner p {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}
+@media (min-width: 992px) {
+  .banner .contenido-banner {
+    left: 152px;
+    bottom: 32px;
+  }
+  .banner .contenido-banner h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px;
+  }
+  .banner .contenido-banner p {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .banner .contenido-banner .btn-productos {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}
+.banner picture img {
+  min-height: 192px;
+}
+.banner .banner-desktop {
+  display: none;
+}
+@media (min-width: 480px) {
+  .banner picture img {
+    max-height: 352px;
+  }
+}
+@media (min-width: 992px) {
+  .banner .banner-tablet {
+    display: none;
+  }
+  .banner .banner-desktop {
+    display: block;
+  }
+  .banner .banner-desktop img {
+    min-height: 352px;
+  }
 }

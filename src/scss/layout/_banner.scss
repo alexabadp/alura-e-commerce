@@ -1,0 +1,112 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.banner {
+  position: relative;
+
+  .contenido-banner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: v.$blanco;
+    min-height: 192px;
+
+    bottom: 16px;
+    left: 16px;
+
+    h1 {
+      @include m.resetear-lista;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+
+    p {
+      color: v.$blanco;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+
+    .btn-productos {
+      width: 128px;
+      height: 40px;
+      background-color: v.$azul;
+      border: none;
+      color: v.$blanco;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+
+    @include m.tablet {
+      left: 32px;
+      bottom: 32px;
+      h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 61px;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+      }
+    }
+
+    @include m.desktop {
+      left: 152px;
+      bottom: 32px;
+      h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 61px;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+      }
+
+      .btn-productos {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+    }
+  }
+
+  picture {
+    img {
+      min-height: 192px;
+    }
+  }
+
+  .banner-desktop {
+    display: none;
+  }
+
+  @include m.telefono {
+    picture {
+      img {
+        max-height: 352px;
+      }
+    }
+  }
+
+  @include m.desktop {
+    .banner-tablet {
+      display: none;
+    }
+    .banner-desktop {
+      display: block;
+
+      img {
+        min-height: 352px;
+      }
+    }
+  }
+}

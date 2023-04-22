@@ -29,7 +29,7 @@
             loading="lazy"
             width="200"
             height="300"
-            src="build/img/Logo.jpg"
+            src="build/img/Logo.png"
             alt="imagen_logo"
           />
         </picture>
@@ -38,8 +38,40 @@
           <input type="text" placeholder="¿Qué deseas buscar?" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <button class="loguin">Login</button>
+        <button class="btn-loguin">Login</button>
       </div>
     </header>
+
+    <div class="banner">
+      <div class="contenedor contenido-banner">
+        <h1>Mes Promocional</h1>
+        <p>Productos seleccionados con 33% de descuento</p>
+        <button class="btn-productos">Ver Productos</button>
+      </div>
+      <picture class="banner-tablet">
+        <source srcset="build/img/bannerR.avif" type="image/avif" />
+        <source srcset="build/img/bannerR.webp" type="image/webp" />
+
+        <img
+          loading="lazy"
+          width="200"
+          height="300"
+          src="build/img/bannerR.png"
+          alt="imagen_logo"
+        />
+      </picture>
+      <picture class="banner-desktop">
+        <source srcset="build/img/banner.avif" type="image/avif" />
+        <source srcset="build/img/banner.webp" type="image/webp" />
+
+        <img
+          loading="lazy"
+          width="200"
+          height="300"
+          src="build/img/banner.png"
+          alt="imagen_logo"
+        />
+      </picture>
+    </div>
   </body>
 </html>
