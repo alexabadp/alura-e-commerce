@@ -1,0 +1,68 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.rodapie {
+  background: #eaf2fd;
+  padding: 16px;
+  .contenedor-logo {
+    text-align: center;
+
+    .logo {
+      width: 176px;
+      height: 50px;
+      margin: auto;
+      padding-bottom: 16px;
+    }
+
+    .informacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0 32px 0;
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+      }
+    }
+
+    form {
+      text-align: left;
+      h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 8px;
+      }
+
+      input {
+        width: 100%;
+        height: 56px;
+        margin-bottom: 16px;
+        padding-left: 12px;
+        border-radius: 4px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 82px;
+        padding: 12px 0 0 12px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+      }
+      button {
+        min-width: 133px;
+        min-height: 40px;
+        background: v.$azul;
+        color: v.$blanco;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+      }
+    }
+  }
+}
