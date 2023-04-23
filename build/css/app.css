@@ -641,52 +641,60 @@ img {
   background: #eaf2fd;
   padding: 16px;
 }
-.rodapie .contenedor-logo {
+
+.contenedor-logo {
+  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.rodapie .contenedor-logo .logo {
+.contenedor-logo .flex {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-logo .flex .logo {
   width: 176px;
   height: 50px;
   margin: auto;
   padding-bottom: 16px;
 }
-.rodapie .contenedor-logo .informacion {
+.contenedor-logo .flex .informacion {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 0 32px 0;
+  padding: 16px 0 16px 0;
 }
-.rodapie .contenedor-logo .informacion p {
+.contenedor-logo .flex .informacion p {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
 }
-.rodapie .contenedor-logo form {
+.contenedor-logo form {
   text-align: left;
 }
-.rodapie .contenedor-logo form h3 {
+.contenedor-logo form h3 {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 8px;
 }
-.rodapie .contenedor-logo form input {
+.contenedor-logo form input {
   width: 100%;
   height: 56px;
   margin-bottom: 16px;
   padding-left: 12px;
   border-radius: 4px;
 }
-.rodapie .contenedor-logo form textarea {
+.contenedor-logo form textarea {
   width: 100%;
   height: 82px;
   padding: 12px 0 0 12px;
   margin-bottom: 8px;
   border-radius: 4px;
 }
-.rodapie .contenedor-logo form button {
+.contenedor-logo form button {
   min-width: 133px;
   min-height: 40px;
   background: #2a7ae4;
@@ -695,4 +703,45 @@ img {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
+}
+@media (min-width: 768px) {
+  .contenedor-logo {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .contenedor-logo .flex {
+    min-width: 254px;
+    text-align: left;
+  }
+  .contenedor-logo .flex .logo {
+    margin: 0;
+  }
+  .contenedor-logo form {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 992px) {
+  .contenedor-logo {
+    gap: 16px;
+  }
+  .contenedor-logo .flex {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .contenedor-logo .flex .logo {
+    flex-grow: 1;
+  }
+  .contenedor-logo .flex .logo picture img {
+    width: 176px;
+  }
+  .contenedor-logo .flex .informacion {
+    flex-grow: 1;
+    min-width: 176px;
+  }
+  .contenedor-logo form {
+    flex-grow: 0;
+  }
 }
