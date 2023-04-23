@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -686,6 +687,7 @@ img {
   margin-bottom: 16px;
   padding-left: 12px;
   border-radius: 4px;
+  border: none;
 }
 .contenedor-logo form textarea {
   width: 100%;
@@ -755,4 +757,70 @@ img {
   font-weight: 500;
   line-height: 19px;
   text-align: center;
+}
+
+.loguin {
+  background: #f5f5f5;
+}
+
+.contenedor-loguin {
+  border: 1px solid #f5f5f5;
+}
+.contenedor-loguin form {
+  margin: 97px auto 76px auto;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-loguin form .titulo-loguin {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.contenedor-loguin form .correo-loguin,
+.contenedor-loguin form .contraseña-loguin {
+  width: 275px;
+  height: 41px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: none;
+  font-size: 16px;
+  padding-left: 1.5rem;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+.contenedor-loguin form .btn-loguin {
+  width: 109px;
+  height: 40px;
+  background-color: #2a7ae4;
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+@media (min-width: 992px) {
+  .contenedor-loguin form .titulo-loguin {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .contenedor-loguin form .correo-loguin,
+  .contenedor-loguin form .contraseña-loguin {
+    width: 423px;
+    height: 63px;
+    border: none;
+  }
+  .contenedor-loguin form .btn-loguin {
+    width: 423px;
+    height: 62px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+  }
 }

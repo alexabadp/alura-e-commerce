@@ -1,0 +1,75 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.loguin {
+  background: v.$blancoCrema;
+}
+.contenedor-loguin {
+  border: 1px solid v.$blancoCrema;
+  form {
+    margin: 97px auto 76px auto;
+    width: 275px;
+    // height: 189px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titulo-loguin {
+      text-align: center;
+      margin: 16px 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+
+    .correo-loguin,
+    .contraseña-loguin {
+      width: 275px;
+      height: 41px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: none;
+      font-size: 16px;
+      padding-left: 1.5rem;
+      font-weight: 400;
+      color: #a2a2a2;
+    }
+
+    .btn-loguin {
+      width: 109px;
+      height: 40px;
+      background-color: v.$azul;
+      color: v.$blanco;
+      border: none;
+      padding: 12px 16px;
+
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+  }
+
+  @include m.desktop {
+    form {
+      .titulo-loguin {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+      }
+      .correo-loguin,
+      .contraseña-loguin {
+        width: 423px;
+        height: 63px;
+        border: none;
+      }
+      .btn-loguin {
+        width: 423px;
+        height: 62px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+      }
+    }
+  }
+}
