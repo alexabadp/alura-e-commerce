@@ -745,3 +745,14 @@ img {
     flex-grow: 0;
   }
 }
+
+.footer {
+  padding: 32px;
+}
+.footer p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+}
