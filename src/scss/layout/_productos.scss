@@ -1,0 +1,102 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.header-productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+
+  h3 {
+    margin: 0;
+    padding: 16px 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .mas-productos {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      color: v.$azul;
+    }
+    i {
+      color: v.$azul;
+    }
+  }
+
+  @include m.tablet {
+    padding-top: 32px;
+    h3 {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    .mas-productos {
+      gap: 12px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include m.desktop {
+    padding-top: 40px;
+    h3 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+.box-desktop {
+  display: none;
+}
+.contenedor-productos {
+  .box-desktop {
+    display: none;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+
+  .box-producto {
+    p {
+      margin: 0;
+      padding-top: 8px;
+      font-size: 14px;
+    }
+    h3 {
+      margin: 0;
+      padding: 8px 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19px;
+      color: v.$azul;
+    }
+  }
+
+  @include m.tablet {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 16px;
+  }
+
+  @include m.desktop {
+    .box-desktop {
+      display: block;
+    }
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
