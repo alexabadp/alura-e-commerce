@@ -5,7 +5,6 @@
   background: v.$blancoCrema;
   form {
     padding: 16px;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -17,7 +16,47 @@
       line-height: 26px;
     }
     input {
+      background-color: v.$blanco;
       height: 56px;
+      border: none;
+      border-radius: 4px;
+      padding-left: 15px;
+    }
+    select {
+      background-color: v.$blanco;
+      height: 56px;
+      border: none;
+      border-radius: 4px;
+      padding-left: 15px;
+    }
+    textarea {
+      background-color: v.$blanco;
+      height: 82px;
+      border: none;
+      border-radius: 4px;
+      padding-left: 15px;
+    }
+    button {
+      height: 51px;
+      background-color: v.$azul;
+      color: v.$blanco;
+      border: none;
+    }
+
+    @include m.tablet {
+      padding: 32px;
+    }
+
+    @include m.desktop {
+      padding: 64px 0;
+      margin: auto;
+      width: 559px;
+
+      .titulo {
+        text-align: left;
+        font-size: 32px;
+        line-height: 38px;
+      }
     }
   }
 }
