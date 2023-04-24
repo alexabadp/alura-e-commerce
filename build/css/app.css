@@ -371,7 +371,7 @@ img {
   justify-content: space-between;
   padding: 2rem;
   align-items: center;
-  gap: 3.2rem;
+  gap: 2.2rem;
 }
 .contenido-header picture {
   display: flex;
@@ -432,7 +432,7 @@ img {
   }
 }
 .contenido-header .btn-loguin {
-  width: 133px;
+  width: 166px;
   height: 40px;
   background: none;
   border: 1px solid #2a7ae4;
@@ -440,6 +440,21 @@ img {
   color: #2a7ae4;
   font-weight: 600;
   line-height: 16px;
+}
+@media (min-width: 768px) {
+  .contenido-header .btn-loguin {
+    width: 166px;
+  }
+}
+@media (min-width: 992px) {
+  .contenido-header .btn-loguin {
+    width: 182px;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-header {
+    gap: 2.2rem;
+  }
 }
 
 .banner {

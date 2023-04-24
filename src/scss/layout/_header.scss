@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding: 2rem;
   align-items: center;
-  gap: 3.2rem;
+  gap: 2.2rem;
 
   picture {
     display: flex;
@@ -73,7 +73,7 @@
   }
 
   .btn-loguin {
-    width: 133px;
+    width: 166px;
     height: 40px;
     background: none;
     border: 1px solid v.$azul;
@@ -81,5 +81,17 @@
     color: v.$azul;
     font-weight: 600;
     line-height: 16px;
+
+    @include m.tablet {
+      width: 166px;
+    }
+
+    @include m.desktop {
+      width: 182px;
+    }
+  }
+
+  @include m.tablet {
+    gap: 2.2rem;
   }
 }
