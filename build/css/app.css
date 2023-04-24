@@ -903,3 +903,46 @@ img {
     line-height: 38px;
   }
 }
+
+.detalle {
+  background-color: #f5f5f5;
+}
+.detalle .overflow {
+  position: relative;
+  height: 192px;
+  overflow: hidden;
+}
+.detalle .detalle-imagen img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.detalle .informacion {
+  padding: 16px;
+}
+.detalle .informacion .titulo {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.detalle .informacion .precio {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.detalle .informacion p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.detalle .otros-productos {
+  padding: 16px 16px 0 16px;
+}
+.detalle .otros-productos h2 {
+  margin-bottom: 16px;
+  font-size: 22px;
+}

@@ -38,34 +38,39 @@
           <input type="text" placeholder="¿Qué deseas buscar?" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <button class="btn-loguin">Menú Administrador</button>
+        <!-- <button class="btn-loguin">Menú Administrador</button> -->
       </div>
     </header>
 
     <section class="detalle">
-      <picture>
-        <source srcset="build/img/Star Wars/1.avif" type="image/avif" />
-        <source srcset="build/img/Star Wars/1.webp" type="image/webp" />
+      <div class="overflow">
+        <picture class="detalle-imagen">
+          <source srcset="build/img/Star Wars/1.avif" type="image/avif" />
+          <source srcset="build/img/Star Wars/1.webp" type="image/webp" />
 
-        <img
-          loading="lazy"
-          width="200"
-          height="300"
-          src="build/img/Star Wars/1.png"
-          alt="imagen_Star Wars/1"
-        />
-      </picture>
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/Star Wars/1.png"
+            alt="imagen_Star Wars/1"
+          />
+        </picture>
+      </div>
+      <div class="informacion">
+        <h1 class="titulo">Producto XYZ</h1>
+        <h3 class="precio">$ 60.00</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+          doloribus at iure expedita tenetur, libero molestias eum quis nemo
+          inventore repudiandae nulla laboriosam labore dicta ducimus! Eveniet,
+          optio accusantium? Illum?
+        </p>
+      </div>
 
-      <h1>Producto XYZ</h1>
-      <h3>$ 60.00</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-        doloribus at iure expedita tenetur, libero molestias eum quis nemo
-        inventore repudiandae nulla laboriosam labore dicta ducimus! Eveniet,
-        optio accusantium? Illum?
-      </p>
-      <h2>Productos similares</h2>
-      <div class="contenedor">
+      <div class="otros-productos">
+        <h2>Productos similares</h2>
+
         <div class="contenedor-productos">
           <div class="box-producto">
             <picture class="producto">
