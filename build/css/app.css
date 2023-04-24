@@ -655,7 +655,6 @@ img {
 
 .rodapie {
   background: #eaf2fd;
-  padding: 16px;
 }
 
 .contenedor-logo {
@@ -907,33 +906,37 @@ img {
 .detalle {
   background-color: #f5f5f5;
 }
-.detalle .overflow {
+.detalle .flex {
+  display: flex;
+  flex-direction: column;
+}
+.detalle .flex .overflow {
   position: relative;
   height: 192px;
   overflow: hidden;
 }
-.detalle .detalle-imagen img {
+.detalle .flex .detalle-imagen img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.detalle .informacion {
+.detalle .flex .informacion {
   padding: 16px;
 }
-.detalle .informacion .titulo {
+.detalle .flex .informacion .titulo {
   margin: 0;
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
 }
-.detalle .informacion .precio {
+.detalle .flex .informacion .precio {
   margin: 8px 0;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
 }
-.detalle .informacion p {
+.detalle .flex .informacion p {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -945,4 +948,37 @@ img {
 .detalle .otros-productos h2 {
   margin-bottom: 16px;
   font-size: 22px;
+}
+@media (min-width: 768px) {
+  .detalle {
+    overflow: auto;
+  }
+  .detalle .flex {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+  }
+  .detalle .flex .overflow {
+    min-width: 254px;
+  }
+}
+@media (min-width: 992px) {
+  .detalle {
+    padding: 64px 152px;
+  }
+  .detalle .flex {
+    padding: 0 16px 32px 16px;
+  }
+  .detalle .flex .overflow {
+    min-width: 560px;
+    min-height: 403px;
+  }
+  .detalle .flex .informacion .titulo {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 61px;
+  }
+  .detalle .flex .informacion p {
+    font-size: 16px;
+  }
 }

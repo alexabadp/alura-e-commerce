@@ -3,41 +3,45 @@
 
 .detalle {
   background-color: v.$blancoCrema;
-  .overflow {
-    position: relative;
-    height: 192px;
-    overflow: hidden;
-  }
-  .detalle-imagen {
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  .flex {
+    display: flex;
+    flex-direction: column;
+    .overflow {
+      position: relative;
+      height: 192px;
+      overflow: hidden;
     }
-  }
-
-  .informacion {
-    padding: 16px;
-    .titulo {
-      margin: 0;
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 26px;
+    .detalle-imagen {
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
-    .precio {
-      margin: 8px 0;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 19px;
-    }
+    .informacion {
+      padding: 16px;
+      .titulo {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+      }
 
-    p {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 16px;
+      .precio {
+        margin: 8px 0;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+      }
     }
   }
 
@@ -47,6 +51,40 @@
     h2 {
       margin-bottom: 16px;
       font-size: 22px;
+    }
+  }
+
+  @include m.tablet {
+    overflow: auto;
+    .flex {
+      flex-direction: row;
+      align-items: center;
+      padding: 16px;
+      .overflow {
+        min-width: 254px;
+      }
+    }
+  }
+
+  @include m.desktop {
+    padding: 64px 152px;
+    .flex {
+      padding: 0 16px 32px 16px;
+      .overflow {
+        min-width: 560px;
+        min-height: 403px;
+      }
+
+      .informacion {
+        .titulo {
+          font-size: 52px;
+          font-weight: 500;
+          line-height: 61px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
