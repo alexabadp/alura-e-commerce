@@ -1,0 +1,23 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.formulario-registro {
+  background: v.$blancoCrema;
+  form {
+    padding: 16px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    .titulo {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 26px;
+    }
+    input {
+      height: 56px;
+    }
+  }
+}
