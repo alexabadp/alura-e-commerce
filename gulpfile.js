@@ -7,6 +7,9 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const avif = require("gulp-avif");
 
+// JavaScript
+const terser = require("gulp-terser-js");
+
 function css(done) {
   src("src/scss/**/*.scss") //Identifica el archivo
     .pipe(sass()) //compilarlo
@@ -48,14 +51,24 @@ function versionAvif(done) {
   done();
 }
 
+function javascript(done) {
+  src("src/js/**/*.js") //identificar  el archivo
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("build/js"));
+  done();
+}
+
 function dev(done) {
   watch("src/scss/**/*.scss", css); // Observar los cambios y actualizarlos
-
+  watch("src/js/**/*.js", javascript);
   done();
 }
 
 exports.css = css;
+exports.js = javascript;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel(imagenes, versionWebp, versionAvif, dev);
+exports.dev = parallel(imagenes, versionWebp, versionAvif, javascript, dev);
