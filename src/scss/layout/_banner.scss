@@ -13,7 +13,8 @@
     min-height: 192px;
 
     bottom: 16px;
-    left: 16px;
+    // left: 16px;
+    width: 100%;
 
     h1 {
       @include m.resetear-lista;
@@ -41,7 +42,7 @@
     }
 
     @include m.tablet {
-      left: 32px;
+      // left: 32px;
       bottom: 32px;
       h1 {
         font-size: 52px;
@@ -57,7 +58,7 @@
     }
 
     @include m.desktop {
-      left: 152px;
+      // left: 152px;
       bottom: 32px;
       h1 {
         font-size: 52px;

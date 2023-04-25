@@ -6,6 +6,7 @@ const cache = require("gulp-cache");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const avif = require("gulp-avif");
+const sourcemaps = require("gulp-sourcemaps");
 
 // JavaScript
 const terser = require("gulp-terser-js");

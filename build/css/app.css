@@ -468,7 +468,7 @@ img {
   color: #ffffff;
   min-height: 192px;
   bottom: 16px;
-  left: 16px;
+  width: 100%;
 }
 .banner .contenido-banner h1 {
   margin: 0;
@@ -496,7 +496,6 @@ img {
 }
 @media (min-width: 768px) {
   .banner .contenido-banner {
-    left: 32px;
     bottom: 32px;
   }
   .banner .contenido-banner h1 {
@@ -512,7 +511,6 @@ img {
 }
 @media (min-width: 992px) {
   .banner .contenido-banner {
-    left: 152px;
     bottom: 32px;
   }
   .banner .contenido-banner h1 {

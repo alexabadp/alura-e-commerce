@@ -43,10 +43,16 @@
     </header>
 
     <div class="banner">
-      <div class="contenedor contenido-banner">
-        <h1>Mes Promocional</h1>
-        <p>Productos seleccionados con 33% de descuento</p>
-        <button href="#consolas" class="btn-productos">Ver Productos</button>
+      <div class="contenido-banner">
+        <div class="contenedor">
+          <h1>Mes Promocional</h1>
+          <p>Productos seleccionados con 33% de descuento</p>
+          <!-- <a href="#consolas" class="seccion-producto"> -->
+          <button href="#consolas" class="btn-productos seccion-producto">
+            Ver Productos
+          </button>
+          <!-- </a> -->
+        </div>
       </div>
       <picture class="banner-tablet">
         <source srcset="build/img/bannerR.avif" type="image/avif" />
@@ -190,7 +196,7 @@
       </div>
     </section>
 
-    <section class="consolas">
+    <section class="consolas" id="consolas">
       <div class="contenedor">
         <header class="header-productos">
           <h3>Consolas</h3>

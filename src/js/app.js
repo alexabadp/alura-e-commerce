@@ -7,12 +7,15 @@ function iniciarApp() {
 }
 
 function scrollNav() {
-  const consola = document.querySelector(".btn-productos");
-
-  consola.addEventListener("click", function (e) {
+  const enlaces = document.querySelector(".btn-productos");
+  console.log("reconoce la clase", enlaces);
+  enlaces.addEventListener("click", function (e) {
     e.preventDefault();
-    const scroll = e.target.attibutes.href.value;
-    const seccion = document.querySelector(scroll);
-    seccion.scrollIntoView({ behavior: "smoth" });
+    console.log("entro a la funcion");
+    console.log(e);
+    const seccionScroll = e.target.attributes.href.value;
+    console.log(seccionScroll);
+    const seccion = document.querySelector(seccionScroll);
+    seccion.scrollIntoView({ behavior: "smooth" });
   });
 }
