@@ -432,6 +432,7 @@ img {
   }
 }
 .contenido-header .btn-loguin {
+  cursor: pointer;
   width: 166px;
   height: 40px;
   background: none;
@@ -440,6 +441,11 @@ img {
   color: #2a7ae4;
   font-weight: 600;
   line-height: 16px;
+  transition: 1s ease;
+}
+.contenido-header .btn-loguin:hover {
+  background: #2a7ae4;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .contenido-header .btn-loguin {
@@ -721,6 +727,12 @@ img {
   font-weight: 600;
   line-height: 16px;
 }
+.contenedor-logo form .input-message-error {
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 2rem;
+  color: red;
+}
 @media (min-width: 768px) {
   .contenedor-logo {
     flex-direction: row;
@@ -757,9 +769,6 @@ img {
   .contenedor-logo .flex .informacion {
     flex-grow: 1;
     min-width: 176px;
-  }
-  .contenedor-logo form {
-    flex-grow: 0;
   }
 }
 

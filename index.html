@@ -38,7 +38,9 @@
           <input type="text" placeholder="¿Qué deseas buscar?" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <button class="btn-loguin">Login</button>
+        <a href="loguin.html">
+          <button href="loguin.html" class="btn-loguin">Login</button>
+        </a>
       </div>
     </header>
 
@@ -456,15 +458,33 @@
         </div>
         <form action="">
           <h3>Hable con nosotros</h3>
-          <input type="text" placeholder="Nombre" />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Escribe tu mensaje"
-          ></textarea>
-          <button type="submit">Enviar mensaje</button>
+          <div>
+            <input
+              class="rodapie-nombre"
+              type="text"
+              placeholder="Nombre"
+              required
+              pattern="[\s\S]{3,40}"
+              data-tipo="nombre"
+            />
+            <p class="input-message-error"></p>
+          </div>
+          <div>
+            <textarea
+              class="rodapie-mensaje"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+              maxlength="120"
+              pattern="^[a-zA-Z0-9 ]{1,100}$"
+              required
+              data-tipo="mensaje"
+            ></textarea>
+            <p class="input-message-error"></p>
+          </div>
+          <button>Enviar Mensaje</button>
         </form>
       </div>
     </section>

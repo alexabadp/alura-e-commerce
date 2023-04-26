@@ -73,6 +73,7 @@
   }
 
   .btn-loguin {
+    cursor: pointer;
     width: 166px;
     height: 40px;
     background: none;
@@ -81,6 +82,11 @@
     color: v.$azul;
     font-weight: 600;
     line-height: 16px;
+    transition: 1s ease;
+    &:hover {
+      background: v.$azul;
+      color: v.$blanco;
+    }
 
     @include m.tablet {
       width: 166px;
