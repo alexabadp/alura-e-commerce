@@ -46,18 +46,28 @@
       <div class="contenedor contenedor-loguin">
         <form action="">
           <h2 class="titulo-loguin">Iniciar Sesión</h2>
-          <input
-            class="correo-loguin"
-            type="text"
-            placeholder="Escriba su correo electrónico"
-            id="username"
-          />
-          <input
-            class="contraseña-loguin"
-            type="text"
-            placeholder="escriba su contraseña"
-            id="password"
-          />
+          <div>
+            <input
+              class="email-loguin"
+              type="email"
+              placeholder="Escriba su correo electrónico"
+              required
+              data-tipo="email"
+            />
+            <p class="input-message-error"></p>
+          </div>
+          <div>
+            <input
+              class="contraseña-loguin"
+              type="password"
+              placeholder="escriba su contraseña"
+              required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+              data-tipo="password"
+            />
+            <p class="input-message-error"></p>
+          </div>
+          <p class="datos-invalidos"></p>
           <button class="btn-loguin">Entrar</button>
         </form>
       </div>
@@ -108,5 +118,7 @@
       <p>Desarrollado por Alex Abad</p>
       <p>2023</p>
     </footer>
+
+    <script src="build/js/loguin.js" type="module"></script>
   </body>
 </html>

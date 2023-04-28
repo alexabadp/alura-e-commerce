@@ -27,6 +27,15 @@ const mensajesDeError = {
     valueMissing: "El campo nombre no puede estar vacío",
     patternMismatch: "El nombre debe tener máximo 120 caracteres.",
   },
+  email: {
+    valueMissing: "El campo correo no puede estar vacío",
+    typeMismatch: "El correo no es válido",
+  },
+  password: {
+    valueMissing: "El campo contraseña no puede estar vacío",
+    patternMismatch:
+      "Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.",
+  },
 };
 
 function mostrarMensajeDeError(tipoDeInput, input) {

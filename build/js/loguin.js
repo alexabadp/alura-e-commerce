@@ -1,2 +1,2 @@
-console.log("este es el loguin");
+import{valida}from"./validaciones.js";const email=document.querySelector(".email-loguin"),password=document.querySelector(".contraseña-loguin");email.addEventListener("blur",(function(e){e.preventDefault(),console.log(e.target),valida(e.target)})),password.addEventListener("blur",(function(e){e.preventDefault(),valida(e.target)}));const button=document.querySelector(".btn-loguin"),datos=document.querySelector(".datos-invalidos");button.addEventListener("click",e=>{e.preventDefault(),console.log(email),"alex@abad.com"==email.value&&"Abad123"==password.value?window.location.href="crud-productos.html":datos.innerHTML="credenciales incorrectas"});
 //# sourceMappingURL=loguin.js.map

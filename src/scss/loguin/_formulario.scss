@@ -23,17 +23,23 @@
       line-height: 19px;
     }
 
-    .correo-loguin,
-    .contraseña-loguin {
+    input {
       width: 275px;
       height: 41px;
       border-radius: 4px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       border: none;
       font-size: 16px;
       padding-left: 1.5rem;
       font-weight: 400;
       color: #a2a2a2;
+    }
+
+    p {
+      margin: 0;
+      color: red;
+      font-size: 12px;
+      padding-bottom: 15px;
     }
 
     .btn-loguin {
@@ -47,6 +53,11 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 16px;
+      cursor: pointer;
+    }
+
+    .datos-invalidos {
+      margin: 0;
     }
   }
 
@@ -57,8 +68,7 @@
         font-weight: 700;
         line-height: 21px;
       }
-      .correo-loguin,
-      .contraseña-loguin {
+      input {
         width: 423px;
         height: 63px;
         border: none;
