@@ -38,29 +38,76 @@
           <input type="text" placeholder="¿Qué deseas buscar?" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <button class="btn-loguin">Menú Administrador</button>
+        <a href="administrador.html">
+          <button class="btn-loguin">Menú Administrador</button>
+        </a>
       </div>
     </header>
 
     <section class="formulario-registro">
       <form action="">
         <h1 class="titulo">Agregar nuevo producto</h1>
-        <input type="text" placeholder="url de la imagen" />
-        <select name="" id="">
-          <option value="" disabled selected>Categoría</option>
-          <option value="">Star Wars</option>
-          <option value="">Consolas</option>
-          <option value="">Diversos</option>
-        </select>
-        <input type="text" placeholder="Nombre del producto" />
-        <input type="text" placeholder="Precio del producto" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Descripcion del producto"
-        ></textarea>
+
+        <div>
+          <input
+            class="url-producto"
+            type="text"
+            placeholder="url de la imagen"
+            required
+            data-tipo="mensaje"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <select
+            class="categoria-producto"
+            name=""
+            id=""
+            required
+            data-tipo="mensaje"
+          >
+            <option value="" disabled selected>Categoría</option>
+            <option value="">Star Wars</option>
+            <option value="">Consolas</option>
+            <option value="">Diversos</option>
+          </select>
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <input
+            class="nombre-producto"
+            type="text"
+            placeholder="Nombre del producto"
+            required
+            pattern="[\s\S]{1,20}"
+            data-tipo="mensaje"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <input
+            class="precio-producto"
+            type="number"
+            placeholder="Precio del producto"
+            required
+            data-tipo="mensaje"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <textarea
+            class="descripcion-producto"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Descripcion del producto"
+            required
+            pattern="[\s\S]{1,150}"
+            data-tipo="mensaje"
+          ></textarea>
+          <span class="input-message-error"></span>
+        </div>
         <button>Agregar producto</button>
       </form>
     </section>
@@ -110,5 +157,7 @@
       <p>Desarrollado por Alex Abad</p>
       <p>2023</p>
     </footer>
+
+    <script src="build/js/crudProductos.js" type="module"></script>
   </body>
 </html>

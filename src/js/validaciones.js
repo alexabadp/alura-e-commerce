@@ -24,7 +24,7 @@ const mensajesDeError = {
     patternMismatch: "El nombre debe tener máximo 40 caracteres.",
   },
   mensaje: {
-    valueMissing: "El campo nombre no puede estar vacío",
+    valueMissing: "El campo no puede estar vacío",
     patternMismatch: "El nombre debe tener máximo 120 caracteres.",
   },
   email: {
