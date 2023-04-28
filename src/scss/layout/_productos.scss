@@ -1,6 +1,13 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+.starWars,
+.consolas,
+.diversos,
+.all-productos {
+  background-color: v.$blancoCrema;
+}
+
 .header-productos {
   display: flex;
   justify-content: space-between;

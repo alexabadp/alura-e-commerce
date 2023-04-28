@@ -557,6 +557,13 @@ img {
   }
 }
 
+.starWars,
+.consolas,
+.diversos,
+.all-productos {
+  background-color: #f5f5f5;
+}
+
 .header-productos {
   display: flex;
   justify-content: space-between;
