@@ -1,0 +1,18 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.all-productos {
+  background-color: v.$blancoCrema;
+}
+
+.btn-agregarProductos {
+  min-width: 133px;
+  min-height: 40px;
+  background: v.$azul;
+  color: v.$blanco;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
