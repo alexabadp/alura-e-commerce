@@ -31,5 +31,63 @@
         </a>
       </div>
     </header>
+    <section class="rodapie">
+      <div class="contenedor contenedor-logo">
+        <div class="flex">
+          <div class="logo">
+            <picture>
+              <source srcset="build/img/Logo.avif" type="image/avif" />
+              <source srcset="build/img/Logo.webp" type="image/webp" />
+
+              <img
+                loading="lazy"
+                width="200"
+                height="300"
+                src="build/img/Logo.png"
+                alt="imagen_logo"
+              />
+            </picture>
+          </div>
+          <div class="informacion">
+            <p>Quienes somos</p>
+            <p>Política de privacidad</p>
+            <p>Programa de fidelidad</p>
+            <p>Nuestras tiendas</p>
+            <p>Quiero ser franquisiado</p>
+            <p>Anuncie aquí</p>
+          </div>
+        </div>
+        <form action="">
+          <h3>Hable con nosotros</h3>
+          <div>
+            <input
+              class="rodapie-nombre"
+              type="text"
+              placeholder="Nombre"
+              required
+              pattern="[\s\S]{1,40}"
+              data-tipo="nombre"
+            />
+            <p class="input-message-error"></p>
+          </div>
+          <div>
+            <textarea
+              class="rodapie-mensaje"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+              maxlength="120"
+              pattern="^[a-zA-Z0-9 ]{1,100}$"
+              required
+              data-tipo="mensaje"
+            ></textarea>
+            <p class="input-message-error"></p>
+          </div>
+          <button>Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
