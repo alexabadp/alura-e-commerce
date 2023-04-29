@@ -43,7 +43,6 @@ function mostrarMensajeDeError(tipoDeInput, input) {
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
       mensaje = mensajesDeError[tipoDeInput][error];
-      console.log(input);
     }
   });
   return mensaje;

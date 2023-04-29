@@ -5,7 +5,6 @@ const password = document.querySelector(".contraseña-loguin");
 
 email.addEventListener("blur", function (e) {
   e.preventDefault();
-  console.log(e.target);
   valida(e.target);
 });
 
@@ -22,8 +21,6 @@ const datos = document.querySelector(".datos-invalidos");
 button.addEventListener("click", (e) => {
   e.preventDefault();
 
-  //   console.log(email.target);
-  console.log(email);
   if (email.value == "alex@abad.com") {
     if (password.value == "Abad123") {
       window.location.href = "crud-productos.html";

@@ -45,7 +45,7 @@
     </header>
 
     <section class="formulario-registro">
-      <form action="">
+      <form action="" data-form>
         <h1 class="titulo">Agregar nuevo producto</h1>
 
         <div>
@@ -55,6 +55,7 @@
             placeholder="url de la imagen"
             required
             data-tipo="mensaje"
+            url-producto
           />
           <span class="input-message-error"></span>
         </div>
@@ -65,11 +66,12 @@
             id=""
             required
             data-tipo="mensaje"
+            categoria-producto
           >
             <option value="" disabled selected>Categoría</option>
-            <option value="">Star Wars</option>
-            <option value="">Consolas</option>
-            <option value="">Diversos</option>
+            <option value="starWars">Star Wars</option>
+            <option value="consolas">Consolas</option>
+            <option value="diversos">Diversos</option>
           </select>
           <span class="input-message-error"></span>
         </div>
@@ -81,6 +83,7 @@
             required
             pattern="[\s\S]{1,20}"
             data-tipo="mensaje"
+            nombre-producto
           />
           <span class="input-message-error"></span>
         </div>
@@ -91,6 +94,7 @@
             placeholder="Precio del producto"
             required
             data-tipo="mensaje"
+            precio-producto
           />
           <span class="input-message-error"></span>
         </div>
@@ -105,6 +109,7 @@
             required
             pattern="[\s\S]{1,150}"
             data-tipo="mensaje"
+            mensaje-producto
           ></textarea>
           <span class="input-message-error"></span>
         </div>
@@ -159,5 +164,17 @@
     </footer>
 
     <script src="build/js/crudProductos.js" type="module"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="build/js/service/controladores/registroProducto.js"
+      type="module"
+    ></script>
   </body>
 </html>

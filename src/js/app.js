@@ -11,7 +11,6 @@ function scrollNav() {
   enlaces.addEventListener("click", function (e) {
     e.preventDefault();
     const seccionScroll = e.target.attributes.href.value;
-    console.log(seccionScroll);
     const seccion = document.querySelector(seccionScroll);
     seccion.scrollIntoView({ behavior: "smooth" });
   });
