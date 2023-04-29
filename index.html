@@ -21,19 +21,20 @@
   <body>
     <header class="header">
       <div class="contenedor contenido-header">
-        <picture>
-          <source srcset="build/img/Logo.avif" type="image/avif" />
-          <source srcset="build/img/Logo.webp" type="image/webp" />
+        <a href="index.html">
+          <picture>
+            <source srcset="build/img/Logo.avif" type="image/avif" />
+            <source srcset="build/img/Logo.webp" type="image/webp" />
 
-          <img
-            loading="lazy"
-            width="200"
-            height="300"
-            src="build/img/Logo.png"
-            alt="imagen_logo"
-          />
-        </picture>
-
+            <img
+              loading="lazy"
+              width="200"
+              height="300"
+              src="build/img/Logo.png"
+              alt="imagen_logo"
+            />
+          </picture>
+        </a>
         <div class="buscador">
           <input type="text" placeholder="¿Qué deseas buscar?" />
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -86,10 +87,10 @@
       <div class="contenedor">
         <header class="header-productos">
           <h3>Star Wars</h3>
-          <div class="mas-productos">
+          <a href="administrador.html" class="mas-productos">
             <p>Ver todo</p>
             <i class="fa-solid fa-arrow-right"></i>
-          </div>
+          </a>
         </header>
         <div class="contenedor-productos">
           <div class="box-producto">
@@ -202,10 +203,12 @@
       <div class="contenedor">
         <header class="header-productos">
           <h3>Consolas</h3>
-          <div class="mas-productos">
-            <p>Ver todo</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+          <a href="administrador.html">
+            <div class="mas-productos">
+              <p>Ver todo</p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
         </header>
         <div class="contenedor-productos">
           <div class="box-producto">
@@ -318,10 +321,12 @@
       <div class="contenedor">
         <header class="header-productos">
           <h3>Diversos</h3>
-          <div class="mas-productos">
-            <p>Ver todo</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+          <a href="administrador.html">
+            <div class="mas-productos">
+              <p>Ver todo</p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
         </header>
         <div class="contenedor-productos">
           <div class="box-producto">

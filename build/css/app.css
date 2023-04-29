@@ -647,6 +647,10 @@ img {
   line-height: 19px;
   color: #2a7ae4;
 }
+.contenedor-productos .box-producto img {
+  min-width: 176px;
+  min-height: 174px;
+}
 @media (min-width: 768px) {
   .contenedor-productos {
     grid-template-columns: repeat(4, 1fr);

@@ -92,6 +92,11 @@
       line-height: 19px;
       color: v.$azul;
     }
+
+    img {
+      min-width: 176px;
+      min-height: 174px;
+    }
   }
 
   @include m.tablet {

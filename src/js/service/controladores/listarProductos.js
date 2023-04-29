@@ -17,7 +17,6 @@ const crearNuevoProducto = (
                 width="200"
                 height="300"
                 src="${url}"
-                alt="imagen_producto"
               />
             <p>${nombre}</p>
             <h3>${precio}</h3>
