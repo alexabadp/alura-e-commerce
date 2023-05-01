@@ -647,9 +647,17 @@ img {
   line-height: 19px;
   color: #2a7ae4;
 }
-.contenedor-productos .box-producto img {
+.contenedor-productos .box-producto .box-imagen {
+  position: relative;
+}
+.contenedor-productos .box-producto .box-imagen img {
   min-width: 176px;
   min-height: 174px;
+}
+.contenedor-productos .box-producto .box-imagen i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 @media (min-width: 768px) {
   .contenedor-productos {

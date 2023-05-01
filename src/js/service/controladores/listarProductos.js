@@ -12,12 +12,16 @@ const crearNuevoProducto = (
 
   const contenido = `
           <div class="box-producto">
+            <div class="box-imagen">
               <img
                 loading="lazy"
                 width="200"
-                height="300"
-                src="${url}"
+               height="300"
+               src="${url}"
               />
+              <i class="fa-sharp fa-light fa-pen"></i>
+              <i class="fa-solid fa-pen"></i>
+            </div>
             <p>${nombre}</p>
             <h3>${precio}</h3>
             <a href="#">Ver producto</a>
