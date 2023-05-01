@@ -654,10 +654,24 @@ img {
   min-width: 176px;
   min-height: 174px;
 }
-.contenedor-productos .box-producto .box-imagen i {
+.contenedor-productos .box-producto .box-imagen .box-iconos {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 11px;
+  right: 11px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+}
+.contenedor-productos .box-producto .box-imagen .box-iconos button {
+  border: none;
+  background-color: transparent;
+}
+.contenedor-productos .box-producto .box-imagen .box-iconos i {
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .contenedor-productos {
