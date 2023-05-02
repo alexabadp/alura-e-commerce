@@ -21,7 +21,7 @@ const crearNuevoProducto = (
               />
               <ul class="box-iconos">  
                 <li>
-                  <a class="button--edit">
+                  <a href="../../../../editar-productos.html?id=${id}">
                     <i class="fa-solid fa-pen"></i>
                   </a>
                 </li>
@@ -33,7 +33,7 @@ const crearNuevoProducto = (
               </ul>
             </div>
             <p>${nombre}</p>
-            <h3>${precio}</h3>
+            <h3>$ ${precio}</h3>
             <a href="#">Ver producto</a>
             <br />
             <br />
@@ -49,7 +49,7 @@ const crearNuevoProducto = (
       .then((respuesta) => {
         console.log(respuesta);
       })
-      .catch((err) => alert("Ocurrio un error"));
+      .catch((err) => alert("Ocurrio un error", err));
   });
 
   return producto;

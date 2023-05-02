@@ -92,110 +92,7 @@
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </header>
-        <div class="contenedor-productos">
-          <div class="box-producto">
-            <picture class="producto">
-              <source srcset="build/img/Star Wars/1.avif" type="image/avif" />
-              <source srcset="build/img/Star Wars/1.webp" type="image/webp" />
-
-              <img
-                loading="lazy"
-                width="200"
-                height="300"
-                src="build/img/Star Wars/1.png"
-                alt="imagen_producto1"
-              />
-            </picture>
-            <p>Producto XYZ</p>
-            <h3>$60,00</h3>
-            <a href="#">Ver producto</a>
-          </div>
-          <div class="box-producto">
-            <picture class="producto">
-              <source srcset="build/img/Star Wars/2.avif" type="image/avif" />
-              <source srcset="build/img/Star Wars/2.webp" type="image/webp" />
-
-              <img
-                loading="lazy"
-                width="200"
-                height="300"
-                src="build/img/Star Wars/2.png"
-                alt="imagen_producto2"
-              />
-            </picture>
-            <p>Producto XYZ</p>
-            <h3>$60,00</h3>
-            <a href="#">Ver producto</a>
-          </div>
-          <div class="box-producto">
-            <picture class="producto">
-              <source srcset="build/img/Star Wars/3.avif" type="image/avif" />
-              <source srcset="build/img/Star Wars/3.webp" type="image/webp" />
-
-              <img
-                loading="lazy"
-                width="200"
-                height="300"
-                src="build/img/Star Wars/3.png"
-                alt="imagen_producto3"
-              />
-            </picture>
-            <p>Producto XYZ</p>
-            <h3>$60,00</h3>
-            <a href="#">Ver producto</a>
-          </div>
-          <div class="box-producto">
-            <picture class="producto">
-              <source srcset="build/img/Star Wars/4.avif" type="image/avif" />
-              <source srcset="build/img/Star Wars/4.webp" type="image/webp" />
-
-              <img
-                loading="lazy"
-                width="200"
-                height="300"
-                src="build/img/Star Wars/4.png"
-                alt="imagen_producto4"
-              />
-            </picture>
-            <p>Producto XYZ</p>
-            <h3>$60,00</h3>
-            <a href="#">Ver producto</a>
-          </div>
-          <div class="box-producto box-desktop">
-            <picture class="producto">
-              <source srcset="build/img/Star Wars/5.avif" type="image/avif" />
-              <source srcset="build/img/Star Wars/5.webp" type="image/webp" />
-
-              <img
-                loading="lazy"
-                width="200"
-                height="300"
-                src="build/img/Star Wars/5.png"
-                alt="imagen_producto5"
-              />
-            </picture>
-            <p>Producto XYZ</p>
-            <h3>$60,00</h3>
-            <a href="#">Ver producto</a>
-          </div>
-          <div class="box-producto box-desktop">
-            <picture class="producto">
-              <source srcset="build/img/Star Wars/6.avif" type="image/avif" />
-              <source srcset="build/img/Star Wars/6.webp" type="image/webp" />
-
-              <img
-                loading="lazy"
-                width="200"
-                height="300"
-                src="build/img/Star Wars/6.png"
-                alt="imagen_producto6"
-              />
-            </picture>
-            <p>Producto XYZ</p>
-            <h3>$60,00</h3>
-            <a href="#">Ver producto</a>
-          </div>
-        </div>
+        <div class="contenedor-productos" starwarsProductos></div>
       </div>
     </section>
 
@@ -210,8 +107,8 @@
             </div>
           </a>
         </header>
-        <div class="contenedor-productos">
-          <div class="box-producto">
+        <div class="contenedor-productos" consolaProductos>
+          <!-- <div class="box-producto">
             <picture class="producto">
               <source srcset="build/img/Consolas/1.avif" type="image/avif" />
               <source srcset="build/img/Consolas/1.webp" type="image/webp" />
@@ -312,7 +209,7 @@
             <p>Producto XYZ</p>
             <h3>$60,00</h3>
             <a href="#">Ver producto</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -328,8 +225,8 @@
             </div>
           </a>
         </header>
-        <div class="contenedor-productos">
-          <div class="box-producto">
+        <div class="contenedor-productos" diversosProductos>
+          <!-- <div class="box-producto">
             <picture class="producto">
               <source srcset="build/img/Diversos/1.avif" type="image/avif" />
               <source srcset="build/img/Diversos/1.webp" type="image/webp" />
@@ -430,7 +327,7 @@
             <p>Producto XYZ</p>
             <h3>$60,00</h3>
             <a href="#">Ver producto</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -500,5 +397,10 @@
     </footer>
 
     <script src="build/js/app.js" type="module"></script>
+
+    <script
+      src="build/js/service/controladores/listarProductoSecciones.js"
+      type="module"
+    ></script>
   </body>
 </html>

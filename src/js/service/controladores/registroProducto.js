@@ -7,8 +7,6 @@ producto.addEventListener("submit", (e) => {
   const url = document.querySelector("[url-producto]").value;
   const categoria = document.querySelector("[categoria-producto]").value;
 
-  console.log(categoria);
-
   const nombre = document.querySelector("[nombre-producto]").value;
   const precio = document.querySelector("[precio-producto]").value;
   const mensaje = document.querySelector("[mensaje-producto]").value;

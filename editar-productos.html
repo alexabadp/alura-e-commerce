@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="build/css/app.css" />
+    <script
+      src="https://kit.fontawesome.com/334fa33965.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <picture>
+          <source srcset="build/img/Logo.avif" type="image/avif" />
+          <source srcset="build/img/Logo.webp" type="image/webp" />
+
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/Logo.png"
+            alt="imagen_logo"
+          />
+        </picture>
+
+        <div class="buscador">
+          <input type="text" placeholder="¿Qué deseas buscar?" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="administrador.html">
+          <button class="btn-loguin">Menú Administrador</button>
+        </a>
+      </div>
+    </header>
+
+    <section class="formulario-registro">
+      <form action="" edit-data-form>
+        <h1 class="titulo">Editar producto</h1>
+
+        <div>
+          <input
+            class="url-producto"
+            type="text"
+            placeholder="url de la imagen"
+            required
+            data-tipo="mensaje"
+            edit-url-producto
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <select
+            class="categoria-producto"
+            name=""
+            id=""
+            required
+            data-tipo="mensaje"
+            edit-categoria-producto
+          >
+            <option value="" disabled selected>Categoría</option>
+            <option value="starWars">Star Wars</option>
+            <option value="consolas">Consolas</option>
+            <option value="diversos">Diversos</option>
+          </select>
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <input
+            class="nombre-producto"
+            type="text"
+            placeholder="Nombre del producto"
+            required
+            pattern="[\s\S]{1,20}"
+            data-tipo="mensaje"
+            edit-nombre-producto
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <input
+            class="precio-producto"
+            type="number"
+            placeholder="Precio del producto"
+            required
+            data-tipo="mensaje"
+            edit-precio-producto
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div>
+          <textarea
+            class="descripcion-producto"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Descripcion del producto"
+            required
+            pattern="[\s\S]{1,150}"
+            data-tipo="mensaje"
+            edit-mensaje-producto
+          ></textarea>
+          <span class="input-message-error"></span>
+        </div>
+        <button type="submit">Editar producto</button>
+      </form>
+    </section>
+
+    <section class="rodapie">
+      <div class="contenedor contenedor-logo">
+        <div class="flex">
+          <div class="logo">
+            <picture>
+              <source srcset="build/img/Logo.avif" type="image/avif" />
+              <source srcset="build/img/Logo.webp" type="image/webp" />
+
+              <img
+                loading="lazy"
+                width="200"
+                height="300"
+                src="build/img/Logo.png"
+                alt="imagen_logo"
+              />
+            </picture>
+          </div>
+          <div class="informacion">
+            <p>Quienes somos</p>
+            <p>Política de privacidad</p>
+            <p>Programa de fidelidad</p>
+            <p>Nuestras tiendas</p>
+            <p>Quiero ser franquisiado</p>
+            <p>Anuncie aquí</p>
+          </div>
+        </div>
+        <form action="">
+          <h3>Hable con nosotros</h3>
+          <input type="text" placeholder="Nombre" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Desarrollado por Alex Abad</p>
+      <p>2023</p>
+    </footer>
+
+    <script src="build/js/crudProductos.js" type="module"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="build/js/service/controladores/actualizarProducto.js"
+      type="module"
+    ></script>
+  </body>
+</html>

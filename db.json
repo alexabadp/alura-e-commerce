@@ -3,146 +3,146 @@
     {
       "url": "build/img/Star Wars/1.avif",
       "categoria": "starWars",
-      "nombre": "Tasa del Clon",
-      "precio": "$ 15",
+      "nombre": "Tasa del Clon 2",
+      "precio": "15",
       "descripcion": "dasda",
-      "id": "4a0de4ab-3813-47ed-9f36-5f4d8a56f344"
+      "id": "1"
     },
     {
       "url": "build/img/Star Wars/2.avif",
       "categoria": "starWars",
       "nombre": "Mini Darth Vader",
-      "precio": "$ 23",
+      "precio": 23,
       "descripcion": "dasda",
-      "id": "4a0de4ab-3813-47ed-9f36-5f4d8a56f344"
+      "id": "2"
     },
     {
       "url": "build/img/Star Wars/3.avif",
       "categoria": "starWars",
       "nombre": "Mini Yoda",
-      "precio": "$ 12",
+      "precio": 12,
       "descripcion": "dasda",
-      "id": "4a0de4ab-3813-47ed-9f36-5f4d8a56f344"
+      "id": "3"
     },
     {
       "url": "build/img/Star Wars/4.avif",
       "categoria": "starWars",
       "nombre": "Clon equipado",
-      "precio": "$ 25",
+      "precio": 25,
       "descripcion": "dasda",
-      "id": "4a0de4ab-3813-47ed-9f36-5f4d8a56f344"
+      "id": "4"
     },
     {
       "url": "build/img/Star Wars/5.avif",
       "categoria": "starWars",
       "nombre": "Baby Yoda",
-      "precio": "$ 18",
+      "precio": 18,
       "descripcion": "dasda",
-      "id": "4a0de4ab-3813-47ed-9f36-5f4d8a56f344"
+      "id": "5"
     },
     {
       "url": "build/img/Star Wars/6.avif",
       "categoria": "starWars",
       "nombre": "Anakin Oscuro",
-      "precio": "$ 29",
+      "precio": 29,
       "descripcion": "safdsfs",
-      "id": "ef3d467c-b7b4-440d-b212-1c42454da4ad"
+      "id": "6"
     },
     {
       "url": "build/img/Consolas/1.avif",
       "categoria": "consolas",
       "nombre": "Mando Blanco",
-      "precio": "$ 16",
+      "precio": 16,
       "descripcion": "asdasda",
-      "id": "081bb0a9-6d52-484b-b597-058c713ef751"
+      "id": "7"
     },
     {
       "url": "build/img/Consolas/2.avif",
       "categoria": "consolas",
       "nombre": "Play Station 5",
-      "precio": "$ 557",
+      "precio": 557,
       "descripcion": "asdasda",
-      "id": "6622eac6-5389-48d1-bfdc-142dfadb79af"
+      "id": "8"
     },
     {
       "url": "build/img/Consolas/3.avif",
       "categoria": "consolas",
       "nombre": "Nintendo",
-      "precio": "$ 321",
+      "precio": 321,
       "descripcion": "asdas",
-      "id": "69575105-2403-411f-b435-b35ecefccf18"
+      "id": "9"
     },
     {
       "url": "build/img/Consolas/4.avif",
       "categoria": "consolas",
       "nombre": "Mando Mini",
-      "precio": "$ 37",
+      "precio": 37,
       "descripcion": "adsadasd",
-      "id": "827162c7-3068-49eb-82b2-a8f41a496850"
+      "id": "10"
     },
     {
       "url": "build/img/Consolas/5.avif",
       "categoria": "consolas",
       "nombre": "Xbox 360",
-      "precio": "$ 445",
+      "precio": 445,
       "descripcion": "fdsfsdf",
-      "id": "79299bfe-09f3-4975-98de-baf07bdaad0a"
+      "id": "11"
     },
     {
       "url": "build/img/Consolas/6.avif",
       "categoria": "consolas",
       "nombre": "Gameboy",
-      "precio": "$ 9",
+      "precio": 9,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "12"
     },
     {
       "url": "build/img/Diversos/1.avif",
       "categoria": "diversos",
       "nombre": "Polo con diseño",
-      "precio": "$ 14",
+      "precio": 14,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "13"
     },
     {
       "url": "build/img/Diversos/2.avif",
       "categoria": "diversos",
       "nombre": "Mando estetico",
-      "precio": "$ 16",
+      "precio": 16,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "14"
     },
     {
       "url": "build/img/Diversos/3.avif",
       "categoria": "diversos",
       "nombre": "Sonic",
-      "precio": "$ 18",
+      "precio": 18,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "15"
     },
     {
       "url": "build/img/Diversos/4.avif",
       "categoria": "diversos",
       "nombre": "Reloj",
-      "precio": "$ 36",
+      "precio": 36,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "16"
     },
     {
       "url": "build/img/Diversos/5.avif",
       "categoria": "diversos",
       "nombre": "Lentes Virtuales",
-      "precio": "$ 69",
+      "precio": 69,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "17"
     },
     {
       "url": "build/img/Diversos/6.avif",
       "categoria": "diversos",
       "nombre": "Pikachu",
-      "precio": "$ 32",
+      "precio": 32,
       "descripcion": "asdasd",
-      "id": "d4eb5673-eb37-465c-930f-edac0052268a"
+      "id": "18"
     }
   ]
 }
